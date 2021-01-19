@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6A77AC</color>
+    <color name="colorPrimaryDark">#6A77AC</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="background">#fcd0ae</color>
+    <color name="atredies">#32a852</color>
+    <color name="benne">#3267a8</color>
+    <color name="emperor">#a84032</color>
+    <color name="fremen">#dece43</color>
+    <color name="harkonan">#6a7280</color>
+    <color name="spacing">#D64933</color>
+    <color name="tl">#7d4991</color>
+    <color name="ixians">#83917d</color>
+</resources>

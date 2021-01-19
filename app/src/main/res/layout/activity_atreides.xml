@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:padding="25dp"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:layout_marginVertical="5dp"
+        />
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_below="@id/title"
+    >
+
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+    >
+        <RelativeLayout
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SoldierContainer"
+
+            >
+            <TextView
+                android:id="@+id/SoldierText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Troops"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <NumberPicker
+                android:id="@+id/SoldierNumberPicker"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginVertical="10dp"
+            android:id="@+id/SpiceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SoldierContainer"
+
+            >
+            <TextView
+                android:id="@+id/SpiceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Spice (Troops)"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <NumberPicker
+                android:id="@+id/SpiceNumberPicker"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginVertical="10dp"
+            android:id="@+id/LeaderContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SpiceContainer"
+
+            >
+            <TextView
+                android:id="@+id/LeaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Leader"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <Spinner
+                android:id="@+id/LeaderSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginVertical="10dp"
+            android:id="@+id/KwisatzContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LeaderContainer"
+
+            >
+            <TextView
+                android:id="@+id/KwisatzText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Kwisatz Haderach"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <CheckBox
+                android:id="@+id/KwisatzCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:buttonTint="@color/colorPrimary"
+                />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginVertical="10dp"
+            android:id="@+id/WeaponContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/KwisatzContainer"
+
+            >
+            <TextView
+                android:id="@+id/WeaponText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Weapon"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <Spinner
+                android:id="@+id/WeaponSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginVertical="10dp"
+            android:id="@+id/DefenceContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_below="@id/WeaponContainer"
+            >
+
+            <TextView
+                android:id="@+id/DefenceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="Defence"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/DefenceSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/CalculateButton"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:clickable="true"
+            android:layout_below="@id/DefenceContainer"
+            android:textSize="20dp"
+            android:text="Calculate"
+            android:background="@color/colorPrimary"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:padding="20dp"
+    >
+
+
+<TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Choose A Faction"
+    android:layout_centerHorizontal="true"
+    android:textSize="35dp"
+    android:layout_marginVertical="5dp"
+    />
+
+<ScrollView
+    android:id="@+id/factions"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/title"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AtreidesButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Atreides"
+        android:layout_marginVertical="10dp"
+        android:background="@color/atredies"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BennegesseritButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Benne Gesserit"
+        android:layout_below="@id/AtreidesButton"
+        android:background="@color/benne"
+        android:layout_marginVertical="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/EmperorButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Emperor"
+        android:layout_below="@id/BennegesseritButton"
+        android:background="@color/emperor"
+        android:layout_marginVertical="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/FremenButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Fremen"
+        android:layout_below="@id/EmperorButton"
+        android:background="@color/fremen"
+        android:layout_marginVertical="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/HarkonnenButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Harkonnen"
+        android:layout_below="@id/FremenButton"
+        android:background="@color/harkonan"
+        android:layout_marginVertical="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/IxiansButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Ixians"
+        android:layout_below="@id/HarkonnenButton"
+        android:background="@color/ixians"
+        android:layout_marginVertical="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SpacingGuildButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Spacing Guild"
+        android:layout_below="@id/IxiansButton"
+        android:background="@color/spacing"
+        android:layout_marginVertical="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/TleilaxuButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tleilaxu"
+        android:layout_below="@id/SpacingGuildButton"
+        android:background="@color/tl"
+        android:layout_marginVertical="10dp"
+        />
+
+    </RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>
